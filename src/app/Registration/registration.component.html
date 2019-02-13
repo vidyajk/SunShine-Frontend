@@ -1,0 +1,63 @@
+<div class = "panel">
+    <div class = "panel-heading">{{ title }}</div>
+    <div class = "panel-body">
+    <div class="table-responsive">      
+    <body>
+
+<form>
+
+<div class="container">
+
+<h1>Personal Details</h1>
+
+<p>Please fill in this form to create an account.</p>
+
+
+<label for="name"><b>First Name: </b></label>
+<input type="text" name="firstName" [(ngModel)] = "user.firstname" required><br><br>
+
+
+
+<label for="name"><b>Middle Name: </b></label>
+<input type="text" name="middleName" [(ngModel)] = "user.middlename" required><br><br>
+
+<b>Last Name:</b>
+<input type="text" name="lastName" [(ngModel)] = "user.lastname" required><br><br>
+
+<b>Father's Name: </b>
+<input type="text" name="fatherName" [(ngModel)] = "user.fathername" required><br><br>
+
+<b>Mobile No: </b>
+<input type="number" name="mobile" [(ngModel)] = "user.mobile" required ><br><br>
+
+<b>Email ID: </b>
+<input type="email" name="email" [(ngModel)] = "user.emailid" required><br><br>
+
+<b>Aadhar card no: </b>
+<input type="text" name="aadhar" [(ngModel)] = "user.aadharno"required><br><br>
+
+<b>Password: </b>
+<input type="password" name="password" [(ngModel)] = "user.password"required><br><br>
+
+
+
+<!-- <b>Date Of Birth: </b>
+<input type="text" name="dateofbirth" [(ngModel)] = "user.dateofbirth" required><br><br>
+
+
+<b>Address: </b>
+<input type="text" name="address" [(ngModel)] = "user.address" required><br><br> -->
+
+
+<button type="submit"class="registerbtn"
+(click)="store()">Register</button>
+</div>
+
+<div 
+class="container signin">
+</div>
+
+</form>
+
+<h1>{{response}}</h1>
+</body>
